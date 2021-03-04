@@ -1,0 +1,14 @@
+.listContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #dfe3e6;
+    border-radius: 5px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.listItem {
+    flex: 1;
+}

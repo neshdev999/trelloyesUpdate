@@ -1,0 +1,43 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cardContentItem {
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cardContentFirstItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardContentFirstItemsPeta {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cardHeader {
+    font-size: 16px;
+    white-space: nowrap;
+    padding-right: 15px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.cardContentSecondItem {
+    /* margin: 5px; */
+    font-size: 12px;
+}

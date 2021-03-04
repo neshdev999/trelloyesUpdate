@@ -1,0 +1,24 @@
+.App {
+    background-color: #0079bf;
+}
+
+.mainHeaderText {
+    color: white;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+}
+
+.mainListsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 30%;
+}
+
+.mainListItem {
+    flex: 1;
+    margin: 5px;
+    width: 200px;
+}
