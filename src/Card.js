@@ -1,27 +1,21 @@
 import React from 'react';
-import './Card.css'
+import './Card.css';
 
-class Card extends React.Component{    
-    render(){
-        let currentCardId = this.props.id;
-        return(
-            <div className="cardContainer">
-                <div className="cardContentItem cardContentFirstItems">
-                    <div className="cardContentFirstItemsPeta">
-                        <h3 className="cardHeader">{this.props.cardStore.allCards[currentCardId]['title']}</h3>
-                    </div>
-                    <div className="cardContentFirstItemsPeta">
-                        <button className="cardButton">delete</button>
-                    </div>
-                </div>
-                <div className="cardContentItem">
-                    <div className="cardContentSecondItem">
-                        <p className="cardContent">{this.props.cardStore.allCards[currentCardId]['content']}</p>
-                    </div>             
-                </div>
-            </div>
-        )
-    }
+export default function Card(props) {
+  return (
+    <div className='Card'>
+      <button
+        type='button'
+        onClick={() => props.onClickDelete(props.id)}
+      >
+        delete
+      </button>
+      <h3>{props.title}</h3>
+      <p>{props.content}</p>
+    </div>
+  )
 }
 
-export default Card;
+Card.propTypes = {
+  onClickDelete: () => {}
+}
