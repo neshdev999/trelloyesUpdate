@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css';
+import PropTypes from 'prop-types';
 
 export default function Card(props) {
   return (
@@ -17,5 +18,5 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-  onClickDelete: () => {}
+  onClickDelete: PropTypes.func
 }
